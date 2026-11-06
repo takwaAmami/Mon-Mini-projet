@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>mon mini projet</title>
+</head>
+<body>
+    <header>
+        <h1>Contactez-nous/Inscrivez-vous</h1>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">A propos nous</a>
+        <a href="services.html">Nos Services</a>
+        <a href="produits.html">Nos produits</a>
+    </nav>
+    <main>
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <label for="nom">Nom* :</label>
+            <input class="h" type="text" id="nom" name="nom" required maxlength="50" placeholder="Amami" style="margin: 1%;">
+            <label  for="prenom">Prénom* :</label>
+            <input class="h" type="text" id="prenom" name="prenom" required maxlength="50" placeholder="Takwa" style="margin: 1%;">
+            <label for="date">Date de naissance :</label>
+            <input class="h" type="date" id="date" style="margin: 1%;">
+            <label for="email">Adresse email* :</label>
+            <input class="h" type="email" required id="email" placeholder="example@email.com" style="margin: 1%;">
+            <label for="url">Site web</label>
+            <input class="h" type="url" id="url" value="http://www." placeholder="https://monsite.com" style="margin: 1%;">
+            <label for="code">Code secret</label>
+            <input class="h" type="password" minlength="6" maxlength="20" style="margin: 1%;">
+            <label for="genre">Genre :</label>
+            <input class="h" type="radio" name="gender" value="Homme" checked> Homme
+            <input class="h" type="radio" name="gender" value="Femme"> Femme
+            <label for="Pays">Pays :</label>
+            <select class="h" name="pays" id="pays">
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+                <option value="alg">Algérie</option>
+                <option value="mc">Maroc</option>
+                <option value="plus">Autre</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Informations complementaires</legend>
+            <label for="tel">Téléphone :</label>
+            <input class="h" type="tel" id="tel">
+            <label for="post">Code postal :</label>
+            <input class="h" type="text"placeholder="1001">
+            <label for="Sem">Semestre :</label>
+            <select class="h" name="Semestre" id="Sem">
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+                <option value="S4">S4</option>
+            </select>
+            <label for="reg">Région préférée</label>
+            <select class="h" name="reg" id="reg">
+                <option value="t">Tunis</option>
+                <option value="s">Sousse</option>
+                <option value="sf">Sfax</option>
+                <option value="d">Djerba</option>
+                <option value="to">Tozeur</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Gouts et centres d'intéret</legend>
+            <label for="cen">Centres d'intéret</label>
+            <input type="checkbox" name="intéret" value="Culture" checked >Culture
+            <input type="checkbox" name="intéret" value="Gastronomie">Gastronomie
+            <input type="checkbox" name="intéret" value="Plage">Plage
+            <input type="checkbox" name="intéret" value="Histoire">Histoire
+            <input type="checkbox" name="intéret" value="Désert">Désert
+            <label for="niv">Niveau en HTML</label>
+            <input class="h" type="range" min="0" max="100" step="10" id="niv">
+            <label for="note">Note de satisfaction</label>
+            <input class="h" type="number" id="note" min="1" max="10" step="1">
+            <label for="mess">Message/commentaire</label>
+            <input class="h" type="textarea" id="mess" rows="5" cols="40" placeholder="adapté">
+        </fieldset>
+        <fieldset>
+            <legend><b>Photo</b></legend>
+            <label for="Photo">Photo de profil</label>
+            <input class="h" type="file" id="Photo" accept="image/*">
+        </fieldset>
+        <fieldset style="margin-top: 1%;">
+            <label for="env">Envoyer</label>
+            <input type="submit" id="env" value="Envoyer">
+            <label for="ef">Effacer</label>
+            <input type="reset" id="ef" value="Effacer">
+        </fieldset>
+
+    </main>
+    <footer>
+        <a href="index.html">Retour a l'accueil</a>
+    </footer>
+</body>
+</html> 
